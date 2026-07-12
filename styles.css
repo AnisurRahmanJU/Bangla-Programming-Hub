@@ -134,7 +134,7 @@ body{
 .tok-fn{ color:var(--blue); }
 .tok-var{ color:var(--ink); }
 .tok-num{ color:var(--teal); }
-.trace-canvas{ padding:20px 18px; display:flex; flex-direction:column; gap:14px; }
+.trace-canvas{ padding:20px 18px; display:flex; flex-direction:column; overflow-x:auto; overflow-y:auto;  gap:14px; }
 .trace-bars{ flex:1; display:flex; align-items:flex-end; gap:6px; min-height:168px; }
 .trace-bars .bar{ flex:1; background:linear-gradient(180deg,#E7E2D4,#D8D2BF); border-radius:4px 4px 2px 2px; transition:height .35s var(--ease), background .25s; }
 .trace-bars .bar.compare{ background:linear-gradient(180deg,var(--coral),#8f2f20); }
