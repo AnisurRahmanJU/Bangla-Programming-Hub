@@ -116,6 +116,56 @@ body{
 .avatar-stack span:nth-child(3){ background:var(--coral); }
 .avatar-stack span:nth-child(4){ background:var(--blue); }
 
+.trace {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  height: 460px; /* আপনার পছন্দমতো একটি নির্দিষ্ট উচ্চতা ফিক্সড করে দিন */
+  width: 100%;
+  max-width: 680px; /* উইন্ডো অতিরিক্ত বড় হলে যেন বেশি ছড়িয়ে না যায় */
+  box-shadow: var(--shadow-pop);
+  overflow: hidden; /* বাইরের অংশ আটকে রেখে ভেতরের বডিতে স্ক্রল দেব */
+}
+
+.trace-titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-alt);
+  flex-shrink: 0; /* টাইটেলবার ছোট হবে না */
+}
+
+.trace-body {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  flex: 1;
+  min-height: 0; /* ফ্লেক্স বক্সের ভেতর গ্রিড ওভারফ্লো ঠিক রাখার জন্য জরুরি */
+  overflow: hidden;
+}
+
+.trace-code {
+  padding: 20px 18px;
+  border-right: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 12.6px;
+  line-height: 2.1;
+  color: var(--ink-mid);
+  overflow: auto; /* কোড বড় হলে ভেতরেই স্ক্রল হবে */
+}
+
+.trace-canvas {
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto; /* ক্যানভাস বড় হলে ভেতরেই স্ক্রল হবে */
+  gap: 14px;
+}
+
+
 .trace{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius-lg); overflow-x:auto; overflow-y:auto; box-shadow:var(--shadow-pop); }
 .trace-titlebar{ display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-bottom:1px solid var(--line); background:var(--paper-alt); }
 .trace-dots{ display:flex; gap:7px; }
