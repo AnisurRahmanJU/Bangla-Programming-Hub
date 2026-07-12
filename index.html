@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>বাংলা প্রোগ্রামিং হাব</title>
+<meta name="description" content="Bangla Programming Languages হলো বাংলা ভাষায় কোড লেখা, রান করা ও শেখার জন্য তৈরি আটটি রিয়েল টুলের একটি কিউরেটেড সংকলন — কোড রানার, নতুন বাংলা ভাষা, ফ্লোচার্ট জেনারেটর ও শিশুদের জন্য ভিজ্যুয়ালাইজার।" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ন্যাভিগেশন — কোনো সাইন-ইন বা অ্যাকাউন্ট নেই -->
+<header class="nav">
+  <div class="wrap nav-row">
+    <a href="#top" class="logo"><span class="logo-mark">বা</span>বাংলা প্রোগ্রামিং হাব</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#features">বৈশিষ্ট্য</a>
+      <a href="#catalog">প্রজেক্ট</a>
+      <a href="#glossary">শব্দকোষ</a>
+      <a href="#faq">প্রশ্নোত্তর</a>
+    </nav>
+    <a href="#catalog" class="btn btn-primary btn-sm hidden-mobile">প্রজেক্ট দেখুন</a>
+    <button class="nav-burger" aria-label="মেনু খুলুন"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- হিরো -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal in">
+      <span class="eyebrow">ফ্রি, ওপেন বাংলা কোডিং টুলস</span>
+      <h1>বাংলায় কোড লিখুন,<br><em>বাংলাতেই</em> বুঝুন।</h1>
+      <p>বাংলা প্রোগ্রামিং হাব হলো বাংলা ভাষায় কোড লেখা, রান করা ও শেখার জন্য তৈরি আসল, কার্যকর টুলগুলোর একটি কিউরেটেড সংকলন — কোড রানার, নতুন বাংলা প্রোগ্রামিং ভাষা, ফ্লোচার্ট জেনারেটর, আইডিই এবং শিশুদের জন্য বিশেষভাবে তৈরি ভিজ্যুয়ালাইজার, সব একসাথে, কোনো অ্যাকাউন্ট ছাড়াই।</p>
+      <div class="hero-actions">
+        <a href="#catalog" class="btn btn-primary">প্রজেক্ট ক্যাটালগ দেখুন</a>
+        <a href="#how" class="btn btn-ghost">কিভাবে ব্যবহার করবেন ↓</a>
+      </div>
+      <div class="hero-proof">
+        <div class="avatar-stack" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <span>৮টি ফ্রি বাংলা প্রোগ্রামিং টুল, সবার জন্য উন্মুক্ত</span>
+      </div>
+    </div>
+
+    <div class="trace reveal in" aria-label="বাংলা কোড থেকে ফ্লোচার্ট">
+      <div class="trace-titlebar">
+        <div class="trace-dots"><span></span><span></span><span></span></div>
+        <span class="trace-file" id="traceFileName">জোড়_বিজোড়.blc</span>
+        <span class="pill" id="traceStatus">চলছে</span>
+      </div>
+      <div class="trace-body">
+        <div class="trace-code" id="traceCode"></div>
+        <div class="trace-canvas">
+          <div class="trace-flow" id="traceFlow"></div>
+          <div class="trace-controls">
+            <div class="trace-tabs" id="traceTabs">
+              <button data-ex="condition" class="active">কন্ডিশন</button>
+              <button data-ex="loop">লুপ</button>
+              <button data-ex="array">অ্যারে</button>
+              <button data-ex="string">স্ট্রিং</button>
+            </div>
+            <div class="trace-playback">
+              <span class="trace-stat" id="traceStat">শুরু হচ্ছে…</span>
+              <button id="traceReplay" aria-label="আবার চালান">↻</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust" aria-label="যা যা কভার করা হয়েছে">
+  <div class="trust-track" id="trustTrack">
+    <div class="trust-item">বাংলা কোড রানার</div>
+    <div class="trust-item">নতুন বাংলা ভাষা</div>
+    <div class="trust-item">ফ্লোচার্ট জেনারেটর</div>
+    <div class="trust-item">প্রফেশনাল আইডিই</div>
+    <div class="trust-item">শিশুদের জন্য শিক্ষা</div>
+    <div class="trust-item">সম্পূর্ণ ফ্রি, কোনো অ্যাকাউন্ট লাগে না</div>
+    <div class="trust-item">বাংলা কোড রানার</div>
+    <div class="trust-item">নতুন বাংলা ভাষা</div>
+    <div class="trust-item">ফ্লোচার্ট জেনারেটর</div>
+    <div class="trust-item">প্রফেশনাল আইডিই</div>
+    <div class="trust-item">শিশুদের জন্য শিক্ষা</div>
+    <div class="trust-item">সম্পূর্ণ ফ্রি, কোনো অ্যাকাউন্ট লাগে না</div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat-cell reveal"><div class="num">৮</div><div class="lbl">স্বতন্ত্র বাংলা কোডিং টুল</div></div>
+      <div class="stat-cell reveal"><div class="num">৪</div><div class="lbl">ক্যাটাগরি জুড়ে বিস্তৃত</div></div>
+      <div class="stat-cell reveal"><div class="num">১০০%</div><div class="lbl">ফ্রি ব্যবহার</div></div>
+      <div class="stat-cell reveal"><div class="num">০</div><div class="lbl">অ্যাকাউন্ট লাগবে</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">কেন এই সংকলন</span>
+      <h2>প্রতিটি কোড ধারণা, এবার বাংলায়</h2>
+      <p>ইংরেজি কীওয়ার্ড আর সিনট্যাক্স মুখস্থ না করে, নিজের ভাষায় লজিক বুঝে কোড শেখা — এই আটটি টুল ঠিক সেই কাজটাই সহজ করে।</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card reveal wide">
+        <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h10M4 18h6" stroke="#2F8F4E" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>আটটি টুল, একটি ঠিকানা</h3>
+        <p>প্রতিটি টুল আলাদাভাবে তৈরি ও চালু রাখা হয়েছে — কোড রান করা, নতুন ভাষা শেখা, ফ্লোচার্ট বানানো বা শিশুদের শেখানো — প্রতিটির জন্য আলাদা, ফোকাসড অভিজ্ঞতা।</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#2F8F4E" stroke-width="2"/><path d="M12 8v4l3 2" stroke="#2F8F4E" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>নিজের কোড, সরাসরি রান</h3>
+        <p>নিজের বাংলা কোড লিখুন বা উদাহরণ বেছে নিন, তারপর সাথে সাথে রান করে ফলাফল দেখুন।</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="1.5" stroke="#2F8F4E" stroke-width="2"/><rect x="13" y="13" width="7" height="7" rx="1.5" stroke="#2F8F4E" stroke-width="2"/><path d="M11 7.5h5.5V13" stroke="#2F8F4E" stroke-width="2"/></svg></div>
+        <h3>ফ্লোচার্ট আকারে বোঝা</h3>
+        <p>কোডের লজিক ফ্লোচার্টে রূপান্তর করে দেখুন, তারপর একই কোড রান করে ফলাফল মিলিয়ে নিন।</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 20V10M12 20V4M20 20v-7" stroke="#2F8F4E" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>শিশু থেকে পেশাদার</h3>
+        <p>একদম শুরুর শিক্ষার্থীদের জন্য ভিজ্যুয়াল টুল থেকে শুরু করে প্রফেশনাল আইডিই পর্যন্ত, সব পর্যায়ের জন্য কিছু না কিছু আছে।</p>
+      </div>
+      <div class="feature-card reveal wide">
+        <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#2F8F4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>সম্পূর্ণ উন্মুক্ত ব্যবহার</h3>
+        <p>কোনো সাইন-ইন দেয়াল নেই — কার্ডে ক্লিক করলেই সরাসরি টুলটি খুলে যায় এবং ব্যবহার শুরু করা যায়।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">যেভাবে ব্যবহার করবেন</span>
+      <h2>তিনটি ধাপ, আর মনে গেঁথে যাবে</h2>
+      <p>কোড রানার, ফ্লোচার্ট জেনারেটর বা শিশুদের ভিজ্যুয়ালাইজার — যেটাই হোক, একই পদ্ধতি কাজ করে।</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-step reveal"><h3>একটি টুল বেছে নিন</h3><p>নিচের ক্যাটালগ থেকে আপনার প্রয়োজন অনুযায়ী টুলটি বেছে নিন।</p></div>
+      <div class="how-step reveal"><h3>কোড লিখুন বা উদাহরণ নিন</h3><p>নিজের বাংলা কোড লিখুন, অথবা দেওয়া উদাহরণ থেকে একটি বেছে সরাসরি রান করুন।</p></div>
+      <div class="how-step reveal"><h3>ফলাফল দেখে শিখুন</h3><p>আউটপুট, ফ্লোচার্ট বা ভিজ্যুয়ালাইজেশন দেখে ধারণাটি নিজের ভাষায় গেঁথে নিন।</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ক্যাটালগ -->
+<section class="catalog" id="catalog">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">প্রজেক্ট ক্যাটালগ</span>
+      <h2>আটটি বাংলা প্রোগ্রামিং টুল, একসাথে</h2>
+      <p>ক্যাটাগরি অনুযায়ী ফিল্টার করুন, তারপর কার্ডে ক্লিক করলেই টুলটি নতুন ট্যাবে খুলে যাবে।</p>
+    </div>
+    <div class="catalog-filters reveal">
+      <button class="filter-chip active" data-filter="all">সব</button>
+      <button class="filter-chip" data-filter="lang">বাংলা প্রোগ্রামিং ও রানার</button>
+      <button class="filter-chip" data-filter="flowchart">ফ্লোচার্ট</button>
+      <button class="filter-chip" data-filter="ide">আইডিই</button>
+      <button class="filter-chip" data-filter="kids">শিশুদের জন্য</button>
+    </div>
+    <div class="course-grid" id="courseGrid">
+
+      <a class="course-card reveal" data-cat="ide" href="https://bangla-code-runner.vercel.app/" target="_blank" rel="noopener">
+        <div class="course-thumb" style="background:var(--teal-bg);"><svg viewBox="0 0 100 60"><rect x="10" y="12" width="80" height="12" rx="3" fill="#0E7D6E" opacity="0.85"/><rect x="10" y="28" width="55" height="12" rx="3" fill="#0E7D6E" opacity="0.6"/><path d="M75 30l10 4-10 4" stroke="#0E7D6E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="10" y="44" width="35" height="8" rx="3" fill="#0E7D6E" opacity="0.35"/></svg></div>
+        <div class="course-body"><span class="course-tag">বাংলা প্রোগ্রামিং ও রানার</span><h4>Bangla Code Runner</h4><p>বাংলা ভাষায় লেখা কোড সরাসরি ব্রাউজারে রান করুন — লিখুন, রান করুন, সাথে সাথে আউটপুট দেখুন।</p><div class="course-meta"><span>bangla-code-runner.vercel.app</span><span class="go">খুলুন ↗</span></div></div>
+      </a>
+
+      <a class="course-card reveal" data-cat="lang" href="https://bondhu-lang.vercel.app/" target="_blank" rel="noopener">
+        <div class="course-thumb" style="background:var(--amber-bg);"><svg viewBox="0 0 100 60"><circle cx="35" cy="30" r="14" fill="#2F8F4E" opacity="0.8"/><circle cx="65" cy="30" r="14" fill="#2F8F4E" opacity="0.4"/></svg></div>
+        <div class="course-body"><span class="course-tag">বাংলা প্রোগ্রামিং ও রানার</span><h4>Bondhu Lang</h4><p>বন্ধুর মতো সহজ বাংলা সিনট্যাক্সে লেখা একটি নতুন প্রোগ্রামিং ভাষা — শেখা ও লেখা দুটোই সহজ।</p><div class="course-meta"><span>bondhu-lang.vercel.app</span><span class="go">খুলুন ↗</span></div></div>
+      </a>
+
+      <a class="course-card reveal" data-cat="lang" href="https://bangla-c.vercel.app/" target="_blank" rel="noopener">
+        <div class="course-thumb" style="background:var(--blue-bg);"><svg viewBox="0 0 100 60"><rect x="10" y="14" width="80" height="10" fill="#2A5EA8" opacity="0.85"/><rect x="10" y="28" width="80" height="10" fill="#2A5EA8" opacity="0.55"/><rect x="10" y="42" width="80" height="10" fill="#2A5EA8" opacity="0.3"/></svg></div>
+        <div class="course-body"><span class="course-tag">বাংলা প্রোগ্রামিং ও রানার</span><h4>Bangla to C</h4><p>সি প্রোগ্রামিং শিখুন বাংলায় — কীওয়ার্ড ও ব্যাখ্যা বাংলায় পড়ে, কোড রান করেই ধারণাটি বুঝুন।</p><div class="course-meta"><span>bangla-c.vercel.app</span><span class="go">খুলুন ↗</span></div></div>
+      </a>
+
+      <a class="course-card reveal" data-cat="flowchart" href="https://bangla2flow.vercel.app/" target="_blank" rel="noopener">
+        <div class="course-thumb" style="background:var(--violet-bg);"><svg viewBox="0 0 100 60"><rect x="35" y="6" width="30" height="12" rx="3" fill="#7A4E97"/><path d="M50 18v8" stroke="#7A4E97" stroke-width="2"/><rect x="30" y="26" width="40" height="12" rx="3" fill="#7A4E97" opacity="0.7"/><path d="M50 38v8" stroke="#7A4E97" stroke-width="2"/><rect x="35" y="46" width="30" height="12" rx="3" fill="#7A4E97" opacity="0.5"/></svg></div>
+        <div class="course-body"><span class="course-tag">ফ্লোচার্ট</span><h4>Bangla2Flow</h4><p>বাংলা কোড থেকে ফ্লোচার্ট ও কোড রান — একটি বাংলা প্রোগ্রাম লিখে সাথে সাথে তার ফ্লোচার্ট দেখুন।</p><div class="course-meta"><span>bangla2flow.vercel.app</span><span class="go">খুলুন ↗</span></div></div>
+      </a>
+
+      <a class="course-card reveal" data-cat="kids" href="https://kodu-pro.vercel.app/" target="_blank" rel="noopener">
+        <div class="course-thumb" style="background:var(--coral-bg);"><svg viewBox="0 0 100 60"><rect x="8" y="10" width="84" height="40" rx="4" fill="none" stroke="#C1402B" stroke-width="2.5"/><rect x="8" y="10" width="84" height="10" fill="#C1402B" opacity="0.6"/><rect x="16" y="26" width="30" height="6" rx="2" fill="#C1402B" opacity="0.6"/><rect x="16" y="36" width="45" height="6" rx="2" fill="#C1402B" opacity="0.4"/></svg></div>
+        <div class="course-body"><span class="course-tag">শিশুদের জন্য</span><h4>Kodu Pro</h4><p>একটি বাংলা কোডিং এডিটর কোড — লিখুন, রান করুন।</p><div class="course-meta"><span>kodu-pro.vercel.app</span><span class="go">খুলুন ↗</span></div></div>
+      </a>
+
+      <a class="course-card reveal" data-cat="lang" href="https://bangla-pro-langs.vercel.app/" target="_blank" rel="noopener">
+        <div class="course-thumb" style="background:var(--teal-bg);"><svg viewBox="0 0 100 60"><rect x="8" y="10" width="24" height="40" rx="3" fill="#0E7D6E" opacity="0.8"/><rect x="38" y="10" width="24" height="40" rx="3" fill="#0E7D6E" opacity="0.55"/><rect x="68" y="10" width="24" height="40" rx="3" fill="#0E7D6E" opacity="0.3"/></svg></div>
+        <div class="course-body"><span class="course-tag">বাংলা প্রোগ্রামিং ও রানার</span><h4>Bangla Pro Langs</h4><p>একাধিক বাংলা প্রোগ্রামিং ভাষার সংকলন একটি প্ল্যাটফর্মে — তুলনা করুন, চর্চা করুন।</p><div class="course-meta"><span>bangla-pro-langs.vercel.app</span><span class="go">খুলুন ↗</span></div></div>
+      </a>
+
+      <a class="course-card reveal" data-cat="kids" href="https://py-viz-forkids.vercel.app/" target="_blank" rel="noopener">
+        <div class="course-thumb" style="background:var(--amber-bg);"><svg viewBox="0 0 100 60"><rect x="8" y="36" width="10" height="18" fill="#2F8F4E"/><rect x="22" y="20" width="10" height="34" fill="#2F8F4E" opacity="0.8"/><rect x="36" y="44" width="10" height="10" fill="#2F8F4E" opacity="0.6"/><rect x="50" y="10" width="10" height="44" fill="#2F8F4E" opacity="0.9"/><rect x="64" y="28" width="10" height="26" fill="#2F8F4E" opacity="0.5"/></svg></div>
+        <div class="course-body"><span class="course-tag">শিশুদের জন্য</span><h4>py-viz-forkids</h4><p>শিশুদের জন্য তৈরি ইন্টারেক্টিভ পাইথন ভিজ্যুয়ালাইজার — খেলার ছলে কোড শেখা।</p><div class="course-meta"><span>py-viz-forkids.vercel.app</span><span class="go">খুলুন ↗</span></div></div>
+      </a>
+
+      <a class="course-card reveal" data-cat="kids" href="https://c-book-forkids.vercel.app/" target="_blank" rel="noopener">
+        <div class="course-thumb" style="background:var(--blue-bg);"><svg viewBox="0 0 100 60"><rect x="14" y="8" width="34" height="44" rx="3" fill="#2A5EA8" opacity="0.8"/><rect x="52" y="8" width="34" height="44" rx="3" fill="#2A5EA8" opacity="0.5"/><path d="M50 8v44" stroke="#F3FAF2" stroke-width="2"/></svg></div>
+        <div class="course-body"><span class="course-tag">শিশুদের জন্য</span><h4>c-book-forkids</h4><p>শিশুদের জন্য সি প্রোগ্রামিং বই — প্রতিটি অধ্যায়ে ইন্টারেক্টিভ উদাহরণ ও সহজ ব্যাখ্যা।</p><div class="course-meta"><span>c-book-forkids.vercel.app</span><span class="go">খুলুন ↗</span></div></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="compare-sec">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">কেন এভাবে শেখা ভালো</span>
+      <h2>পড়া, দেখা, নাকি নিজে করে দেখা</h2>
+      <p>একটি প্রোগ্রামিং ধারণা শেখার তিনটি সাধারণ উপায়, আর প্রতিটি আসলে কী দেয়।</p>
+    </div>
+    <div class="compare-table-wrap reveal">
+      <table class="compare-table">
+        <thead><tr><th>পদ্ধতি</th><th class="hl">বাংলা টুল</th><th>ইংরেজি বই / ডকুমেন্টেশন</th><th>ভিডিও লেকচার</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">নিজের ভাষায় ধারণা বোঝা</th><td class="hl"><span class="compare-yes">হ্যাঁ, সরাসরি বাংলায়</span></td><td><span class="compare-no">না — আগে ইংরেজি বুঝতে হয়</span></td><td><span class="compare-no">নির্ভর করে লেকচারের ভাষার উপর</span></td></tr>
+          <tr><th scope="row">নিজের কোড লিখে রান করা যায়</th><td class="hl"><span class="compare-yes">হ্যাঁ, একাধিক টুলে</span></td><td><span class="compare-no">না</span></td><td><span class="compare-no">না</span></td></tr>
+          <tr><th scope="row">ফ্লোচার্ট বা ভিজ্যুয়াল সহায়তা</th><td class="hl"><span class="compare-yes">হ্যাঁ, বেশ কিছু টুলে</span></td><td><span class="compare-no">খুব কম</span></td><td><span class="compare-yes">মাঝে মাঝে</span></td></tr>
+          <tr><th scope="row">শিশুদের জন্য উপযোগী</th><td class="hl"><span class="compare-yes">হ্যাঁ, আলাদা টুল আছে</span></td><td><span class="compare-no">সাধারণত না</span></td><td><span class="compare-no">সাধারণত না</span></td></tr>
+          <tr><th scope="row">অ্যাকাউন্ট প্রয়োজন</th><td class="hl"><span class="compare-yes">না — সরাসরি ব্যবহারযোগ্য</span></td><td><span class="compare-no">নির্ভরশীল</span></td><td><span class="compare-no">প্রায়ই হ্যাঁ</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="glossary" id="glossary">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">সংক্ষিপ্ত শব্দকোষ</span>
+      <h2>শব্দটি জানুন, তারপর টুলে গিয়ে দেখুন</h2>
+      <p>নিচের প্রতিটি শব্দ উপরের ক্যাটালগের একটি না একটি টুলের সাথে সরাসরি সম্পর্কিত।</p>
+    </div>
+    <div class="glossary-grid">
+      <div class="glossary-card reveal"><div class="glossary-term"><h4>বাংলা সিনট্যাক্স</h4><span class="big-o">ভাষা</span></div><p>ইংরেজি কীওয়ার্ডের বদলে বাংলা শব্দ ব্যবহার করে কোড লেখার পদ্ধতি — দেখুন Bondhu Lang ও Bangla Pro Langs-এ।</p></div>
+      <div class="glossary-card reveal"><div class="glossary-term"><h4>কোড রানার</h4><span class="big-o">এক্সিকিউশন</span></div><p>লেখা কোড সরাসরি ব্রাউজারে চালিয়ে আউটপুট দেখানোর ব্যবস্থা — Bangla Code Runner-এ ব্যবহার করুন।</p></div>
+      <div class="glossary-card reveal"><div class="glossary-term"><h4>ফ্লোচার্ট</h4><span class="big-o">ভিজ্যুয়াল</span></div><p>প্রোগ্রামের নিয়ন্ত্রণ-প্রবাহের ডায়াগ্রাম, স্বয়ংক্রিয়ভাবে তৈরি — দেখুন Bangla2Flow-তে।</p></div>
+      <div class="glossary-card reveal"><div class="glossary-term"><h4>আইডিই</h4><span class="big-o">টুল</span></div><p>লেখা, রান করা ও ডিবাগ করার সম্পূর্ণ পরিবেশ — Kodu Pro-তে ব্যবহার করে দেখুন।</p></div>
+      <div class="glossary-card reveal"><div class="glossary-term"><h4>ভিজ্যুয়ালাইজার</h4><span class="big-o">শিক্ষা</span></div><p>কোড ধাপে ধাপে চলার দৃশ্যমান রূপ — শিশুদের জন্য দেখুন py-viz-forkids-এ।</p></div>
+      <div class="glossary-card reveal"><div class="glossary-term"><h4>ইন্টারেক্টিভ বই</h4><span class="big-o">শিক্ষা</span></div><p>প্রতিটি অধ্যায়ে চলমান উদাহরণসহ শেখার বই — দেখুন c-book-forkids-এ।</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">শিক্ষার্থীদের কথায়</span>
+      <h2>নিজের ভাষায় বুঝলে, আর ভুলি না</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal"><div class="testi-stars" aria-hidden="true">★★★★★</div><p class="testi-quote">"Bangla Code Runner দিয়ে প্রথমবার নিজের লেখা কোড বাংলায় রান করে দেখলাম — জিনিসটা মাথায় গেঁথে গেল।"</p><div class="testi-person"><div class="testi-avatar"></div><div><div class="testi-name">রাফসান আহমেদ</div><div class="testi-role">শিক্ষার্থী</div></div></div></div>
+      <div class="testi-card reveal"><div class="testi-stars" aria-hidden="true">★★★★★</div><p class="testi-quote">"আমার ছোট বোনকে py-viz-forkids দিয়ে কোড শেখাচ্ছি — ও নিজে থেকেই এখন প্রোগ্রাম চালাতে পারে।"</p><div class="testi-person"><div class="testi-avatar" style="background:linear-gradient(150deg,#2F8F4E,#1F5C33)"></div><div><div class="testi-name">নুসরাত জাহান</div><div class="testi-role">অভিভাবক</div></div></div></div>
+      <div class="testi-card reveal"><div class="testi-stars" aria-hidden="true">★★★★★</div><p class="testi-quote">"Bangla2Flow দিয়ে লজিক আগে ফ্লোচার্টে বুঝে নিয়ে তারপর কোড লিখি — ভুল অনেক কমে গেছে।"</p><div class="testi-person"><div class="testi-avatar" style="background:linear-gradient(150deg,#7A4E97,#4c2f61)"></div><div><div class="testi-name">তানভীর হাসান</div><div class="testi-role">সিএসই শিক্ষার্থী</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head reveal center">
+      <span class="eyebrow">প্রশ্নোত্তর</span>
+      <h2>শুরু করার আগে</h2>
+    </div>
+    <div class="faq-list reveal" id="faqList">
+      <div class="faq-item open"><button class="faq-q">এই টুলগুলো ব্যবহার করতে কি সাইন-ইন লাগবে?<span class="plus"></span></button><div class="faq-a"><p>না। ক্যাটালগের প্রতিটি টুল উন্মুক্তভাবে ব্যবহারযোগ্য — কার্ডে ক্লিক করলেই সরাসরি ব্যবহার শুরু করা যায়, কোনো অ্যাকাউন্ট বা পেমেন্ট ছাড়াই।</p></div></div>
+      <div class="faq-item"><button class="faq-q">কোন কোন বিষয় কভার করা হয়েছে?<span class="plus"></span></button><div class="faq-a"><p>বাংলা কোড রানার, নতুন বাংলা প্রোগ্রামিং ভাষা, ফ্লোচার্ট জেনারেটর, প্রফেশনাল আইডিই এবং শিশুদের জন্য শিক্ষামূলক টুল — মোট আটটি প্রজেক্ট জুড়ে।</p></div></div>
+      <div class="faq-item"><button class="faq-q">টুলগুলো কি এখানে হোস্ট করা, নাকি অন্য কোথাও?<span class="plus"></span></button><div class="faq-a"><p>প্রতিটি কার্ড সরাসরি সংশ্লিষ্ট টুলের নিজস্ব ঠিকানায় (Vercel-এ হোস্ট করা) নিয়ে যায়, যেখানে টুলটি সরাসরি ব্যবহার করা যায়।</p></div></div>
+      <div class="faq-item"><button class="faq-q">সব বয়সের জন্যই কি উপযোগী?<span class="plus"></span></button><div class="faq-a"><p>হ্যাঁ — py-viz-forkids ও c-book-forkids বিশেষভাবে শিশুদের জন্য তৈরি, আর বাকি টুলগুলো নতুন শিক্ষার্থী থেকে অভিজ্ঞ ডেভেলপার সবার কাজে লাগে।</p></div></div>
+      <div class="faq-item"><button class="faq-q">এই টুলগুলো কি এখনো আপডেট হচ্ছে?<span class="plus"></span></button><div class="faq-a"><p>প্রতিটি প্রজেক্ট আলাদাভাবে সক্রিয়ভাবে তৈরি ও রক্ষণাবেক্ষণ করা হয়, তাই নতুন ফিচার ও উন্নতি সময়ে সময়ে যোগ হতে পারে।</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="wrap">
+    <div class="cta-inner reveal">
+      <span class="eyebrow">সবসময় ফ্রি</span>
+      <h2>আর কল্পনা নয় — এবার বাংলায় কোড করুন।</h2>
+      <p>আটটি ওপেন বাংলা প্রোগ্রামিং টুল, এখনই ব্যবহারযোগ্য — কোনো অ্যাকাউন্ট ছাড়াই।</p>
+      <div class="hero-actions">
+        <a href="#catalog" class="btn btn-primary">প্রজেক্ট ক্যাটালগ দেখুন</a>
+        <a href="#how" class="btn btn-ghost">কিভাবে শুরু করবেন ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo"><span class="logo-mark">বা</span>বাংলা প্রোগ্রামিং হাব</a>
+        <p>বাংলা ভাষায় কোড লেখা, রান করা ও শেখার জন্য তৈরি ওপেন টুলগুলোর একটি কিউরেটেড ঠিকানা — কোনো অ্যাকাউন্ট প্রয়োজন নেই।</p>
+      </div>
+      <div class="footer-col"><h5>প্রোডাক্ট</h5><ul><li><a href="#features">বৈশিষ্ট্য</a></li><li><a href="#catalog">প্রজেক্ট ক্যাটালগ</a></li><li><a href="#how">ব্যবহারবিধি</a></li></ul></div>
+      <div class="footer-col"><h5>শেখা</h5><ul><li><a href="#catalog">প্রজেক্ট ক্যাটালগ</a></li><li><a href="#glossary">শব্দকোষ</a></li><li><a href="#faq">প্রশ্নোত্তর</a></li></ul></div>
+      <div class="footer-col"><h5>কোম্পানি</h5><ul><li><a href="#">সম্পর্কে</a></li><li><a href="#">যোগাযোগ</a></li><li><a href="#">গোপনীয়তা</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© ২০২৬ বাংলা প্রোগ্রামিং হাব. সর্বস্বত্ব সংরক্ষিত।</span>
+      <div class="footer-legal"><a href="#">গোপনীয়তা</a><a href="#">শর্তাবলী</a><a href="#">কুকিজ</a></div>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
