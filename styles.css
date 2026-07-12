@@ -116,7 +116,7 @@ body{
 .avatar-stack span:nth-child(3){ background:var(--coral); }
 .avatar-stack span:nth-child(4){ background:var(--blue); }
 
-.trace{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-pop); }
+.trace{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius-lg); overflow-x:auto; overflow-y:auto; box-shadow:var(--shadow-pop); }
 .trace-titlebar{ display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-bottom:1px solid var(--line); background:var(--paper-alt); }
 .trace-dots{ display:flex; gap:7px; }
 .trace-dots span{ width:10px; height:10px; border-radius:50%; }
