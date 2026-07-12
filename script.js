@@ -159,17 +159,17 @@
         [['fn','    দেখাও'],['var','(ক)']]
       ],
       flowType:'loop',
-      flow:{ start:['শুরু'], init:['i = ১'], decision:['i <= ৫','?'], body:['দেখাও(i)','i = i + ১'], end:['শেষ'] },
+      flow:{ start:['শুরু'], init:['ক = ১'], decision:['ক <= ৫','?'], body:['দেখাও(ক)','ক = ক + ১'], end:['শেষ'] },
       steps:[
         {node:'start', line:null, cap:'প্রোগ্রাম শুরু হলো।'},
-        {node:'init', line:0, cap:'i এর মান ১ ধরে নেওয়া হলো।'},
-        {node:'decision', line:0, cap:'শর্ত পরীক্ষা: i <= ৫ ? (হ্যাঁ)'},
-        {node:'body', line:1, cap:'দেখাও(১) — এখন i = ২।'},
-        {node:'decision', line:0, cap:'শর্ত পরীক্ষা: i <= ৫ ? (হ্যাঁ)'},
-        {node:'body', line:1, cap:'দেখাও(২) — এখন i = ৩।'},
-        {node:'decision', line:0, cap:'শর্ত পরীক্ষা: i <= ৫ ? (হ্যাঁ)'},
+        {node:'init', line:0, cap:'ক এর মান ১ ধরে নেওয়া হলো।'},
+        {node:'decision', line:0, cap:'শর্ত পরীক্ষা: ক <= ৫ ? (হ্যাঁ)'},
+        {node:'body', line:1, cap:'দেখাও(১) — এখন ক = ২।'},
+        {node:'decision', line:0, cap:'শর্ত পরীক্ষা: ক <= ৫ ? (হ্যাঁ)'},
+        {node:'body', line:1, cap:'দেখাও(২) — এখন ক = ৩।'},
+        {node:'decision', line:0, cap:'শর্ত পরীক্ষা: ক <= ৫ ? (হ্যাঁ)'},
         {node:'body', line:1, cap:'দেখাও(৩) — লুপ চলতেই থাকবে…'},
-        {node:'end', line:null, cap:'i = ৬ হলে শর্ত মিথ্যা হবে, লুপ থেমে যাবে।'}
+        {node:'end', line:null, cap:'ক = ৬ হলে শর্ত মিথ্যা হবে, লুপ থেমে যাবে।'}
       ]
     },
     array:{
